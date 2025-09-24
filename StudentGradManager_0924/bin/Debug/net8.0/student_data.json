@@ -1,0 +1,25 @@
+[
+  {
+    "NumberId": "250924",
+    "Name": "\u5C0F\u660E",
+    "ClassName": "\u4E00\u5E74\u4E00\u73ED",
+    "Grades": [
+      {
+        "Subject": "\u570B\u6587",
+        "Score": 94
+      }
+    ]
+  },
+  {
+    "NumberId": "250923",
+    "Name": "\u5C0F\u7F8E",
+    "ClassName": "\u4E00\u5E74\u4E00\u73ED",
+    "Grades": []
+  },
+  {
+    "NumberId": "\u5C0F\u592B",
+    "Name": "\u5C0F\u592B",
+    "ClassName": "\u4E00\u5E74\u4E00\u73ED",
+    "Grades": []
+  }
+]

@@ -1,0 +1,94 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A079D24E-1918-4518-9550-E083748B3B0A}|StudentGradManager_0924\\StudentGradManager_0924.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\student_grade_manager_\u7DF4\u7FD2\\studentgradmanager_0924_8.0\\studentgradmanager_0924\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A079D24E-1918-4518-9550-E083748B3B0A}|StudentGradManager_0924\\StudentGradManager_0924.csproj|solutionrelative:studentgradmanager_0924\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA78D6ED-C87E-42CC-ABC8-ED87956666FA}|Student_Grade_Test\\Student_Grade_Test.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\student_grade_manager_\u7DF4\u7FD2\\studentgradmanager_0924_8.0\\student_grade_test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA78D6ED-C87E-42CC-ABC8-ED87956666FA}|Student_Grade_Test\\Student_Grade_Test.csproj|solutionrelative:student_grade_test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4224A3-8FE4-4AA8-B71E-1064BB81604D}|Service\\Service.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\student_grade_manager_\u7DF4\u7FD2\\studentgradmanager_0924_8.0\\service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4224A3-8FE4-4AA8-B71E-1064BB81604D}|Service\\Service.csproj|solutionrelative:service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA78D6ED-C87E-42CC-ABC8-ED87956666FA}|Student_Grade_Test\\Student_Grade_Test.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\student_grade_manager_\u7DF4\u7FD2\\studentgradmanager_0924_8.0\\student_grade_test\\student_grade_test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DA78D6ED-C87E-42CC-ABC8-ED87956666FA}|Student_Grade_Test\\Student_Grade_Test.csproj|solutionrelative:student_grade_test\\student_grade_test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\StudentGradManager_0924\\Program.cs",
+              "RelativeDocumentMoniker": "StudentGradManager_0924\\Program.cs",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\StudentGradManager_0924\\Program.cs",
+              "RelativeToolTip": "StudentGradManager_0924\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T08:15:49.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Service\\StudentService.cs",
+              "RelativeDocumentMoniker": "Service\\StudentService.cs",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Service\\StudentService.cs",
+              "RelativeToolTip": "Service\\StudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T07:16:00.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Student_Grade_Test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Student_Grade_Test\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Student_Grade_Test\\UnitTest1.cs",
+              "RelativeToolTip": "Student_Grade_Test\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T06:49:05.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student_Grade_Test.csproj",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Student_Grade_Test\\Student_Grade_Test.csproj",
+              "RelativeDocumentMoniker": "Student_Grade_Test\\Student_Grade_Test.csproj",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Student_Grade_Test\\Student_Grade_Test.csproj",
+              "RelativeToolTip": "Student_Grade_Test\\Student_Grade_Test.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-24T06:49:01.513Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

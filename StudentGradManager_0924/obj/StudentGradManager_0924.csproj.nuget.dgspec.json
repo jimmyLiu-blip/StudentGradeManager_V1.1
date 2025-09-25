@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\StudentGradManager_0924\\StudentGradManager_0924.csproj": {}
+    "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\StudentGradManager_0924\\StudentGradManager_0924.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Domain\\Domain.csproj": {
+    "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Jimmy-HY_Liu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages",
@@ -72,14 +72,14 @@
         }
       }
     },
-    "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Repository\\Repository.csproj": {
+    "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Jimmy-HY_Liu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages",
@@ -103,8 +103,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Domain\\Domain.csproj"
+              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj"
               }
             }
           }
@@ -144,14 +144,14 @@
         }
       }
     },
-    "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Service\\Service.csproj": {
+    "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\Jimmy-HY_Liu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Service\\obj\\",
+        "outputPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages",
@@ -175,11 +175,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Domain\\Domain.csproj"
+              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Repository\\Repository.csproj"
+              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Repository\\Repository.csproj"
               }
             }
           }
@@ -219,14 +219,14 @@
         }
       }
     },
-    "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\StudentGradManager_0924\\StudentGradManager_0924.csproj": {
+    "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\StudentGradManager_0924\\StudentGradManager_0924.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\StudentGradManager_0924\\StudentGradManager_0924.csproj",
+        "projectUniqueName": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\StudentGradManager_0924\\StudentGradManager_0924.csproj",
         "projectName": "StudentGradManager_0924",
-        "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\StudentGradManager_0924\\StudentGradManager_0924.csproj",
+        "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\StudentGradManager_0924\\StudentGradManager_0924.csproj",
         "packagesPath": "C:\\Users\\Jimmy-HY_Liu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\StudentGradManager_0924\\obj\\",
+        "outputPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\StudentGradManager_0924\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages",
@@ -250,14 +250,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Domain\\Domain.csproj"
+              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Repository\\Repository.csproj"
+              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Repository\\Repository.csproj"
               },
-              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Service\\Service.csproj"
+              "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Service\\Service.csproj"
               }
             }
           }

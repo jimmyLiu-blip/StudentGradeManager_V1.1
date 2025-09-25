@@ -1,22 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\",
+  "WorkspaceRootPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A079D24E-1918-4518-9550-E083748B3B0A}|StudentGradManager_0924\\StudentGradManager_0924.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\student_grade_manager_\u7DF4\u7FD2\\studentgradmanager_0924_8.0\\studentgradmanager_0924\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A079D24E-1918-4518-9550-E083748B3B0A}|StudentGradManager_0924\\StudentGradManager_0924.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\studentgradmanager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\studentgradmanager_0924\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A079D24E-1918-4518-9550-E083748B3B0A}|StudentGradManager_0924\\StudentGradManager_0924.csproj|solutionrelative:studentgradmanager_0924\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA78D6ED-C87E-42CC-ABC8-ED87956666FA}|Student_Grade_Test\\Student_Grade_Test.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\student_grade_manager_\u7DF4\u7FD2\\studentgradmanager_0924_8.0\\student_grade_test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA78D6ED-C87E-42CC-ABC8-ED87956666FA}|Student_Grade_Test\\Student_Grade_Test.csproj|solutionrelative:student_grade_test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F4224A3-8FE4-4AA8-B71E-1064BB81604D}|Service\\Service.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\student_grade_manager_\u7DF4\u7FD2\\studentgradmanager_0924_8.0\\service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4F4224A3-8FE4-4AA8-B71E-1064BB81604D}|Service\\Service.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\studentgradmanager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F4224A3-8FE4-4AA8-B71E-1064BB81604D}|Service\\Service.csproj|solutionrelative:service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA78D6ED-C87E-42CC-ABC8-ED87956666FA}|Student_Grade_Test\\Student_Grade_Test.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\student_grade_manager_\u7DF4\u7FD2\\studentgradmanager_0924_8.0\\student_grade_test\\student_grade_test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DA78D6ED-C87E-42CC-ABC8-ED87956666FA}|Student_Grade_Test\\Student_Grade_Test.csproj|solutionrelative:student_grade_test\\student_grade_test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{C6B2A54B-4C37-44A2-828D-13C4CFBCFF71}|Domain\\Domain.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\studentgradmanager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\domain\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B2A54B-4C37-44A2-828D-13C4CFBCFF71}|Domain\\Domain.csproj|solutionrelative:domain\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\StudentGradManager_0924\\bin\\Debug\\net8.0\\student_data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentGradManager_0924\\bin\\Debug\\net8.0\\student_data.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA78D6ED-C87E-42CC-ABC8-ED87956666FA}|Student_Grade_Test\\Student_Grade_Test.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\studentgradmanager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\student_grade_test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA78D6ED-C87E-42CC-ABC8-ED87956666FA}|Student_Grade_Test\\Student_Grade_Test.csproj|solutionrelative:student_grade_test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CB84EE3-33D9-439F-9B22-B290DCEE1DB8}|Repository\\Repository.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\studentgradmanager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\repository\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CB84EE3-33D9-439F-9B22-B290DCEE1DB8}|Repository\\Repository.csproj|solutionrelative:repository\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CB84EE3-33D9-439F-9B22-B290DCEE1DB8}|Repository\\Repository.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\studentgradmanager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\repository\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CB84EE3-33D9-439F-9B22-B290DCEE1DB8}|Repository\\Repository.csproj|solutionrelative:repository\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B2A54B-4C37-44A2-828D-13C4CFBCFF71}|Domain\\Domain.csproj|c:\\users\\jimmy-hy_liu\\source\\repos\\studentgradmanager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B2A54B-4C37-44A2-828D-13C4CFBCFF71}|Domain\\Domain.csproj|solutionrelative:domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,53 +54,103 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "student_data.json",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\StudentGradManager_0924\\bin\\Debug\\net8.0\\student_data.json",
+              "RelativeDocumentMoniker": "StudentGradManager_0924\\bin\\Debug\\net8.0\\student_data.json",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\StudentGradManager_0924\\bin\\Debug\\net8.0\\student_data.json",
+              "RelativeToolTip": "StudentGradManager_0924\\bin\\Debug\\net8.0\\student_data.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-25T08:17:45.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Domain\\Student.cs",
+              "RelativeDocumentMoniker": "Domain\\Student.cs",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Domain\\Student.cs",
+              "RelativeToolTip": "Domain\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T08:18:33.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Grade.cs",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Domain\\Grade.cs",
+              "RelativeDocumentMoniker": "Domain\\Grade.cs",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Domain\\Grade.cs",
+              "RelativeToolTip": "Domain\\Grade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T08:18:32.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IFileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Repository\\IFileRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IFileRepository.cs",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Repository\\IFileRepository.cs",
+              "RelativeToolTip": "Repository\\IFileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T08:19:30.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "fileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Repository\\fileRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\fileRepository.cs",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Repository\\fileRepository.cs",
+              "RelativeToolTip": "Repository\\fileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T08:18:34.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Service\\StudentService.cs",
+              "RelativeDocumentMoniker": "Service\\StudentService.cs",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Service\\StudentService.cs",
+              "RelativeToolTip": "Service\\StudentService.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAqwK4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T07:16:00.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\StudentGradManager_0924\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\StudentGradManager_0924\\Program.cs",
               "RelativeDocumentMoniker": "StudentGradManager_0924\\Program.cs",
-              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\StudentGradManager_0924\\Program.cs",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\StudentGradManager_0924\\Program.cs",
               "RelativeToolTip": "StudentGradManager_0924\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIYBAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T08:15:49.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Service\\StudentService.cs",
-              "RelativeDocumentMoniker": "Service\\StudentService.cs",
-              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Service\\StudentService.cs",
-              "RelativeToolTip": "Service\\StudentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T07:16:00.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Student_Grade_Test\\UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Student_Grade_Test\\UnitTest1.cs",
               "RelativeDocumentMoniker": "Student_Grade_Test\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Student_Grade_Test\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_\u81EA\u884C\u66F4\u65B0\\Student_Grade_Test\\UnitTest1.cs",
               "RelativeToolTip": "Student_Grade_Test\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAewDEAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T06:49:05.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Student_Grade_Test.csproj",
-              "DocumentMoniker": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Student_Grade_Test\\Student_Grade_Test.csproj",
-              "RelativeDocumentMoniker": "Student_Grade_Test\\Student_Grade_Test.csproj",
-              "ToolTip": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_\u7DF4\u7FD2\\StudentGradManager_0924_8.0\\Student_Grade_Test\\Student_Grade_Test.csproj",
-              "RelativeToolTip": "Student_Grade_Test\\Student_Grade_Test.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-24T06:49:01.513Z"
+              "WhenOpened": "2025-09-24T06:49:05.172Z"
             }
           ]
         }

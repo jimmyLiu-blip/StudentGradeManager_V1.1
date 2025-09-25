@@ -1,263 +1,446 @@
 ﻿using StudentGradeManager.Domain;
 using StudentGradeManager.Repository;
 using StudentGradeManager.Service;
+using System.Security.Cryptography.X509Certificates;
+using System.Text.RegularExpressions;
+using System.Threading.Channels;
+using System.Xml.Linq;
 
 
 namespace StudentGradeManager.Program
 {
     class Program
     {
-        // 創建了一個 FileRepository 的新實例，被當作參數傳入 StudentService 的建構函式
-        // StudentService 就能在內部使用這個 FileRepository 實例來進行檔案讀寫操作，但它本身並不需要知道 FileRepository 是如何被建立的
+        // 介面無法被實例化，不能直接用new IFileRepository()
+        // 靜態欄位初始化問題：需要具體的實作類別
+        // 較複雜的Console會把private static StudentService _studentService = new StudentService(new FileRepository());放在開頭
         private static StudentService _studentService = new StudentService(new FileRepository());
 
+        // Main方法是靜態的，必須是static
         static void Main(string[] args)
         {
-            Console.WriteLine("==== 學生成績管理系統 ====");
-
             bool exit = false;
+
             while (!exit)
             {
-                ShowMenu();
-                string choice = Console.ReadLine();
-                Console.Clear(); // 清除主控台（Console）螢幕上的所有內容；在 Console.ReadLine() 之後呼叫它，其主要目的是為了讓使用者介面更整潔
-
                 try
                 {
+                    ShowMenu();
+
+                    Console.Write("請選擇功能：");
+
+                    string choice = Console.ReadLine()??"";
+
+                    Console.Clear();
+
                     switch (choice)
                     {
                         case "1":
                             AddStudent();
                             break;
                         case "2":
-                            AddStudentGrade();
+                            UpdateStudent();
                             break;
                         case "3":
-                            UpdateStudentGrade();
-                            break;
-                        case "4":
-                            GetStudentGrades();
-                            break;
-                        case "5":
-                            GetStudentStatistics();
-                            break;
-                        case "6":
                             GetAllStudents();
                             break;
+                        case "4":
+                            AddStudentGrade();
+                            break;
+                        case "5":
+                            UpdateStudentGrade();
+                            break;
+                        case "6":
+                            GetStudentGrades();
+                            break;
                         case "7":
-                            GetStudents3Top();
+                            GetTop3Students();
                             break;
                         case "8":
-                            GetSubjectStats();
+                            GetAllSubjects();
                             break;
                         case "9":
+                            GetStudentName();
+                            break;
+                        case "10":
+                            GetStudentStatistics();
+                            break;
+                        case "11":
+                            GetSubjectStatistics();
+                            break;
+                        case "12":
+                            Console.WriteLine("感謝使用學生成績管理系統，再見！");
                             exit = true;
                             break;
                         default:
-                            Console.WriteLine("無效的選擇，請輸入 1-9 的數字。");
-                            break;
+                            {
+                                Console.WriteLine("無效的選擇，請按任意件離開");
+                                break;
+                            }
                     }
                 }
                 catch (InvalidOperationException ex)
                 {
-                    Console.WriteLine($"操作錯誤：{ex.Message}");
+                    Console.WriteLine($"操作錯誤，{ex.Message}");
+                    PauseAndContinue();
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"發生未預期的錯誤：{ex.Message}");
+                    Console.WriteLine($"出現異常錯誤，{ex.Message}");
+                    PauseAndContinue();
                 }
-
-                /*如果沒有這段程式碼，每次執行完一個功能後，程式會立即清除螢幕 (Console.Clear()) 並顯示主選單，
-                 * 使用者可能還沒來得及看到操作結果（例如「新增學生成功！」），螢幕就已經被清空了。
-                 * 透過 Console.ReadKey()，程式能給使用者一個「暫停」的時間，讓他們可以看清楚當前的操作結果，
-                 * 再決定是否繼續下一個步驟。這大幅提升了主控台應用程式的使用者體驗。
-                 */
                 if (!exit)
                 {
-                    Console.WriteLine("\n按下任意鍵繼續...");
-                    Console.ReadKey();
+                    PauseAndContinue();
                 }
-            }
-        }
+}
 
+        }
         private static void ShowMenu()
         {
             Console.Clear();
-            Console.WriteLine("==== 學生管理系統 ====");
-            Console.WriteLine("1. 新增學生");
-            Console.WriteLine("2. 新增學生科目成績");
-            Console.WriteLine("3. 更新學生科目成績");
-            Console.WriteLine("4. 查詢學生所有科目成績");
-            Console.WriteLine("5. 查詢學生總平均、最高與最低成績");
-            Console.WriteLine("6. 顯示所有學生資訊");
-            Console.WriteLine("7. 顯示成績前三名學生");
-            Console.WriteLine("8. 查詢指定科目最高分、最低分與總人數");
-            Console.WriteLine("9. 離開程式");
-            Console.Write("\n請輸入您的選擇：");
+            Console.WriteLine("   ===學生成績管理系統===   ");
+            Console.WriteLine("輸入1，新增學生");
+            Console.WriteLine("輸入2，更新指定學生姓名班級");
+            Console.WriteLine("輸入3，取得所有學生");
+            Console.WriteLine("輸入4，新增學生科目成績");
+            Console.WriteLine("輸入5，更新指定學生科目成績");
+            Console.WriteLine("輸入6，取得指定學生科目成績");
+            Console.WriteLine("輸入7，取得班上前三名");
+            Console.WriteLine("輸入8，取得班上所有科目");
+            Console.WriteLine("輸入9，取得指定學生名字");
+            Console.WriteLine("輸入10，取得指定學生的平均成績、最高分、最低分");
+            Console.WriteLine("輸入11，取得指定科目的最高分、最低分和學生人數");
+            Console.WriteLine("輸入12，離開系統");
         }
-
-        // static:這個方法屬於 Program 類別本身，而不是屬於 Program 類別的某個實例（instance）。
-        // 你可以直接用 Program.AddStudent() 來呼叫它
         private static void AddStudent()
         {
-            Console.Write("請輸入學號：");
-            string numberId = Console.ReadLine();
-            Console.Write("請輸入姓名：");
-            string name = Console.ReadLine();
-            Console.Write("請輸入班級：");
-            string className = Console.ReadLine();
+            Console.WriteLine("=== 新增學生 ===");
 
-            _studentService.AddStudent(numberId, name, className);
-            Console.WriteLine($"學生 {name} 已成功新增。");
+            Console.WriteLine("請輸入學生的學號：");
+            string numberId = Console.ReadLine() ?? "";
+            if (string.IsNullOrWhiteSpace(numberId))
+            {
+                Console.WriteLine("學號不能為空");
+                return;
+            }
+
+            Console.WriteLine("請輸入學生的姓名：");
+            string name = Console.ReadLine() ?? "";
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                Console.WriteLine("姓名不能為空");
+                return;
+            }
+
+            Console.WriteLine("請輸入學生的班級：");
+            string classname = Console.ReadLine() ?? "";
+            if (string.IsNullOrWhiteSpace(classname))
+            {
+                Console.WriteLine("班級不能為空");
+                return;
+            }
+
+            _studentService.AddStudent(numberId, name, classname);
+
+            Console.WriteLine($"學生{name}：已新增成功");
+
         }
-
         private static void AddStudentGrade()
         {
-            Console.Write("請輸入學號：");
-            string numberId = Console.ReadLine();
-            Console.Write("請輸入科目：");
-            string subject = Console.ReadLine();
-            Console.Write("請輸入成績：");
-            double score = double.Parse(Console.ReadLine());
+            Console.WriteLine("=== 新增學生科目成績 ===");
+
+            Console.WriteLine("請輸入學生的學號:");
+            string numberId = Console.ReadLine() ?? "";
+            if (string.IsNullOrWhiteSpace(numberId))
+            {
+                Console.WriteLine("學號不能為空");
+                return;
+            }
+
+            Console.WriteLine("請輸入科目:");
+            string subject = Console.ReadLine() ?? "";
+            if (string.IsNullOrWhiteSpace(subject))
+            {
+                Console.WriteLine("科目不能為空");
+                return;
+            }
+
+            Console.WriteLine("請輸入成績:");
+            // double score = double.TryParse(Console.ReadLine() ?? ""); 建議修改
+            string scoreInput = Console.ReadLine() ?? "";
+            double score;
+
+            while (!double.TryParse(scoreInput, out score) || score < 0 || score > 100)
+            {
+                Console.WriteLine("成績輸入無效，請輸入介於 0 ~ 100之間的數字");
+                scoreInput = Console.ReadLine() ?? "";
+            }
 
             _studentService.AddStudentGrade(numberId, subject, score);
-            Console.WriteLine($"學生 {numberId} 的 {subject} 成績已成功新增。");
+
+            var student = _studentService.GetStudentName(numberId);
+
+            Console.WriteLine($"學生：{student}的科目成績已新增成功");
+
         }
 
-        private static void UpdateStudentGrade()
-        {
-            Console.Write("請輸入學號：");
-            string numberId = Console.ReadLine();
-            Console.Write("請輸入要更新的舊科目名稱：");
-            string oldSubject = Console.ReadLine();
-            Console.Write("請輸入新的科目名稱：");
-            string newSubject = Console.ReadLine();
-            Console.Write("請輸入新的成績：");
-            double newScore = double.Parse(Console.ReadLine());
-
-            _studentService.UpdateStudentGrade(numberId, oldSubject, newSubject, newScore);
-            Console.WriteLine($"學生 {numberId} 的成績已成功更新。");
-        }
-
-        private static void GetStudentGrades()
-        {
-            Console.Write("請輸入學號：");
-            string numberId = Console.ReadLine();
-
-            var grades = _studentService.GetStudentGrades(numberId);
-
-            var studentName = _studentService.GetStudentName(numberId);
-
-            // 檢查是否有找到學生或成績
-            if (string.IsNullOrEmpty(studentName))
-            {
-                Console.WriteLine("該學號不存在。");
-                return;
-            }
-
-            if (grades.Count == 0)
-            {
-                Console.WriteLine($"該學生{studentName}沒有成績或學號不存在。");
-                return;
-            }
-
-            Console.WriteLine($"\n學生 {studentName} 的所有成績：");
-            foreach (var grade in grades)
-            {
-                Console.WriteLine($" - 科目：{grade.Subject}, 成績：{grade.Score}");
-            }
-        }
-
-        private static void GetStudentStatistics()
-        {
-            Console.Write("請輸入學號：");
-            string numberId = Console.ReadLine();
-
-            var stats = _studentService.GetStudentStatistics(numberId);
-
-            if (stats.average == 0)
-            {
-                Console.WriteLine("該學生沒有成績或學號不存在。");
-                return;
-            }
-
-            Console.WriteLine($"\n學生 {numberId} 的成績統計：");
-            Console.WriteLine($" - 平均成績：{stats.average:F2}");
-            Console.WriteLine($" - 最高分：{stats.highest}");
-            Console.WriteLine($" - 最低分：{stats.lowest}");
-        }
-
+        //取得所有學生：不熟
         private static void GetAllStudents()
         {
-            var allStudents = _studentService.GetAllStudent();
-            if (allStudents.Count == 0)
-            {
-                Console.WriteLine("目前沒有任何學生資料。");
-                return;
-            }
+            var allstudents = _studentService.GetAllStudents();
 
-            Console.WriteLine("\n==== 所有學生資訊 ====");
-            foreach (var student in allStudents)
+            Console.WriteLine("=== 所有學生資訊 ===");
+
+            foreach (var student in allstudents)
             {
-                Console.WriteLine($"學號: {student.NumberId}, 姓名: {student.Name}, 班級: {student.ClassName}");
+                Console.WriteLine($"\n學號:{student.NumberId}, 姓名:{student.Name}, 班級:{student.ClassName}");
                 if (student.Grades.Any())
                 {
                     Console.WriteLine("  成績:");
                     foreach (var grade in student.Grades)
                     {
-                        Console.WriteLine($"    - 科目: {grade.Subject}, 成績: {grade.Score}");
+                        Console.WriteLine($"   -科目:{grade.Subject}, 成績:{grade.Score}");
                     }
                 }
             }
+
+        }
+        private static void UpdateStudent()
+        {
+            Console.WriteLine("=== 更新學生姓名班級 ===");
+
+            Console.WriteLine("請輸入學生的學號：");
+            string numberId = Console.ReadLine() ?? "" ;
+            if (string.IsNullOrWhiteSpace(numberId))
+            {
+                Console.WriteLine("學號不能為空");
+                return;
+            }
+
+            Console.WriteLine("請輸入學生的新姓名：");
+            string newName = Console.ReadLine() ?? "" ;
+            if (string.IsNullOrWhiteSpace(newName))
+            {
+                Console.WriteLine("學生的新姓名不能為空");
+                return;
+            }
+
+            Console.WriteLine("請輸入學生的新班級：");
+            string newClassName = Console.ReadLine() ?? "" ;
+            if (string.IsNullOrWhiteSpace(newClassName))
+            {
+                Console.WriteLine("學生的新班級不能為空");
+                return;
+            }
+
+            _studentService.UpdateStudent(numberId, newName, newClassName);
+
+            Console.WriteLine($"更新學號為{numberId}的姓名和班級成功");
+        }
+        private static void PauseAndContinue()
+        {
+            Console.WriteLine("\n按下任意鍵繼續...");
+            Console.ReadKey();
         }
 
-        private static void GetStudents3Top()
+        private static void UpdateStudentGrade()
         {
-            var topStudents = _studentService.GetStudents3Top();
+            Console.WriteLine("=== 更新學生的科目成績 ===");
+
+            Console.WriteLine("請輸入想要更改科目成績的學生學號：");
+            string numberId = Console.ReadLine() ?? "";
+            if (string.IsNullOrWhiteSpace(numberId))
+            {
+                Console.WriteLine("學號不可為空");
+                return;
+            }
+
+            Console.WriteLine("請輸入想要更正的科目名稱(修正前)");
+            string oldsubject = Console.ReadLine() ?? "";
+            if (string.IsNullOrWhiteSpace(oldsubject))
+            {
+                Console.WriteLine("舊科目不可為空");
+                return;
+            }
+
+            Console.WriteLine("請輸入想要更正的科目名稱(修正後)");
+            string newsubject = Console.ReadLine() ?? "";
+            if (string.IsNullOrWhiteSpace(newsubject))
+            {
+                Console.WriteLine("新科目不可為空");
+                return;
+            }
+
+            Console.WriteLine("請輸入想要更正的科目成績(修正後)");
+            string newscoreInput = Console.ReadLine() ?? "";
+            double newscore = 0;
+
+            while (!double.TryParse(newscoreInput, out newscore) || newscore < 0 || newscore > 100)
+            {
+                Console.WriteLine("成績輸入無效，請輸入介於 0 ~ 100之間的數字");
+                newscoreInput = Console.ReadLine() ?? "";
+            }
+
+            _studentService.UpdateStudentGrade(numberId, oldsubject, newsubject, newscore);
+        }
+
+        //取得學生科目成績：不熟
+        private static void GetStudentGrades()
+        {
+            Console.WriteLine("=== 取得指定學生分數 ===");
+
+            Console.WriteLine("請輸入想要查詢科目成績的學生學號：");
+            string numberId = Console.ReadLine()??"";
+            if (string.IsNullOrWhiteSpace(numberId))
+            {
+                Console.WriteLine("學號不可為空");
+                return;
+            }
+
+            var grades = _studentService.GetStudentGrades(numberId);
+
+            var studentName = _studentService.GetStudentName(numberId);
+
+            if (string.IsNullOrEmpty(studentName))
+            {
+                Console.WriteLine("該學生不存在");
+                return;
+            }
+
+            if (grades.Count == 0)
+            {
+                Console.WriteLine($"該學生：{studentName}沒有成績");
+                return;
+            }
+
+            Console.WriteLine($"學生：{studentName}的所有成績");
+            foreach (var grade in grades)
+            {
+                Console.WriteLine($" - 科目：{grade.Subject}, 成績:{grade.Score}");
+            }
+
+        }
+
+        //取得成績前三名：有部分遺漏
+        private static void GetTop3Students()
+        { 
+            var topStudents = _studentService.GetTop3Students();
 
             if (topStudents.Count == 0)
             {
-                Console.WriteLine("目前沒有足夠的學生資料或成績來排名。");
+                Console.WriteLine("目前沒有足夠的學生資料或成績來排名");
                 return;
             }
 
             Console.WriteLine("\n==== 成績前三名學生 ====");
             int rank = 1;
+
             foreach (var student in topStudents)
             {
                 var averageScore = student.Grades.Average(g => g.Score);
-                Console.WriteLine($"{rank}. 姓名: {student.Name}, 平均成績: {averageScore:F2}");
+                Console.WriteLine($"第{rank}名為{student.Name},平均成績為：{averageScore}");
                 rank++;
             }
         }
 
-        private static void GetSubjectStats()
-        {
+        private static void GetAllSubjects()
+        { 
             var allSubjects = _studentService.GetAllSubjects();
+
             if (allSubjects.Count == 0)
             {
-                Console.WriteLine("目前沒有任何科目成績資料。");
+                Console.WriteLine("目前沒有科目可以取得");
                 return;
             }
 
-            Console.WriteLine("\n目前有的科目：");
-            Console.WriteLine(string.Join(", ", allSubjects));  // string.Join 是一種靜態方法，以指定的分隔符號連接成一個單一的字串，然後輸出到主控台。
-
-            Console.Write("\n請輸入要查詢的科目名稱：");
-            string subject = Console.ReadLine();
-
-            var stats = _studentService.GetSubjectStats(subject);
-
-            if (stats.studentCount == 0)
+            foreach (var subject in allSubjects)
             {
-                Console.WriteLine($"找不到科目 '{subject}' 的成績資料。");
+                Console.WriteLine($"科目-{subject}");
+            }
+        }
+
+        private static void GetStudentName()
+        {
+            Console.WriteLine("=== 取得指定學號的學生 ===");
+            Console.WriteLine("請輸入想要查詢姓名的學生學號：");
+            string numberId = Console.ReadLine()??"";
+
+            if (string.IsNullOrWhiteSpace(numberId))
+            {
+                Console.WriteLine("學號不可為空");
                 return;
             }
 
-            Console.WriteLine($"\n科目 '{subject}' 的統計：");
-            Console.WriteLine($" - 最高分：{stats.highest}");
-            Console.WriteLine($" - 最低分：{stats.lowest}");
-            Console.WriteLine($" - 總學生數：{stats.studentCount}");
+            var student = _studentService.GetStudentName(numberId);
+
+            if (student == null)
+            {
+                Console.WriteLine("該學號的學生姓名不存在");
+                return;
+            }
+
+            Console.WriteLine($"學號：{numberId}的學生姓名為：{student}");
+
         }
+
+        // 指定學生的學號，查詢他的平均成績、最高分、最低分要再練習
+        public static void GetStudentStatistics()
+        {
+            Console.WriteLine("=== 取得學生分數統計 ===");
+            Console.WriteLine("請輸入指定學生的學號，查詢他的平均成績、最高分、最低分：");
+            string numberId = Console.ReadLine()??"";
+            if (string.IsNullOrWhiteSpace(numberId))
+            {
+                Console.WriteLine("學號不可為空");
+                return;
+            }
+
+            var statistics = _studentService.GetStudentStatistics(numberId);
+            if (statistics.average == 0 && statistics.highest == 0 && statistics.lowest == 0)
+            {
+                Console.WriteLine($"找不到學號為{numberId}的學生，或該學生沒有任何科目成績");
+                return;
+            }
+
+            var studentName = _studentService.GetStudentName(numberId);
+
+            Console.WriteLine($"學生{studentName}的成績統計：");
+            Console.WriteLine($"平均分數為{statistics.average:F2}");
+            Console.WriteLine($"最高分數為{statistics.highest}");
+            Console.WriteLine($"最低分數為{statistics.lowest}");
+        }
+
+        private static void GetSubjectStatistics()
+        {
+            Console.WriteLine("===取得指定科目的最高分、最低分，及考試人數===");
+            Console.WriteLine("請輸入指定查詢的科目");
+            string subject = Console.ReadLine() ?? "";
+            if (string.IsNullOrWhiteSpace(subject))
+            {
+                Console.WriteLine("指定科目不存在");
+                return;
+            }
+
+            var statistics = _studentService.GetSubjectStatistics(subject);
+            if (statistics.studentCount == 0)
+            {
+                Console.WriteLine($"無人報考此科目:{subject}");
+                return;
+            }
+
+            Console.WriteLine($"{subject}科目的成績統計為：");
+            Console.WriteLine($"最高分為：{statistics.highest}");
+            Console.WriteLine($"最低分為：{statistics.lowest}");
+            Console.WriteLine($"報考人數為:{statistics.studentCount}");
+
+
+
+
+        }
+
+
     }
+
+    
 }

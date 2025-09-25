@@ -1,5 +1,6 @@
 ﻿using StudentGradeManager.Domain;
 using StudentGradeManager.Repository;
+using System.Threading.Channels;
 
 namespace StudentGradeManager.Service
 {
@@ -42,8 +43,12 @@ namespace StudentGradeManager.Service
             _fileRepository.SaveDataToJson(_students);
         }
 
-        public List<Student> GetAllStudent()
+        public List<Student> GetAllStudents()
         {
+            if (_students == null)
+            { 
+                return new List<Student>();
+            }
             return _students;
         }
 
@@ -105,7 +110,7 @@ namespace StudentGradeManager.Service
             return (average, highest, lowest);
         }
 
-        public List<Student> GetStudents3Top()
+        public List<Student> GetTop3Students()
         {
             return _students
                 // 忘記LINQ寫法
@@ -134,7 +139,7 @@ namespace StudentGradeManager.Service
             return subjects;
         }
 
-        public (double highest, double lowest, double studentCount) GetSubjectStats(string subject)
+        public (double highest, double lowest, double studentCount) GetSubjectStatistics(string subject)
         {
             var scores = new List<double>();
 
@@ -175,9 +180,13 @@ namespace StudentGradeManager.Service
 
             var student = _students.FirstOrDefault(s => s.NumberId == numberId);
 
+            if (student == null)
+            {
+                Console.WriteLine("學生姓名不存在");
+                return "學生姓名不存在";
+            }
 
-
-            return student?.Name;
+            return student.Name;
 
         }
     }

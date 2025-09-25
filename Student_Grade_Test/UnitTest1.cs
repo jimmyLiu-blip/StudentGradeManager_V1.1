@@ -47,7 +47,7 @@ namespace Student_Grade_Test
 
             // 驗證學生列表中確實新增了張三這個學生
             // 我們可以從 StudentService 取得所有學生，然後檢查張三是否存在
-            var allStudents = studentService.GetAllStudent();
+            var allStudents = studentService.GetAllStudents();
             Assert.True(allStudents.Any(s => s.NumberId == numberId && s.Name == name));
         }
 

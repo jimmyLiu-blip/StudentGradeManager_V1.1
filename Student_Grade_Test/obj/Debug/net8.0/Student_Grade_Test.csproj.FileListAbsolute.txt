@@ -118,3 +118,13 @@ C:\Users\Jimmy-HY_Liu\source\repos\StudentGradManager_0924_8.0\Student_Grade_Tes
 C:\Users\Jimmy-HY_Liu\source\repos\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\Student_Grade_Test.pdb
 C:\Users\Jimmy-HY_Liu\source\repos\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\Student_Grade_Test.genruntimeconfig.cache
 C:\Users\Jimmy-HY_Liu\source\repos\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\ref\Student_Grade_Test.dll
+C:\Users\Jimmy-HY_Liu\source\repos\Backup\Student_Grade_Manager_練習\StudentGradManager_0924_8.0\Student_Grade_Test\bin\Debug\net8.0\CoverletSourceRootsMapping_Student_Grade_Test
+C:\Users\Jimmy-HY_Liu\source\repos\Backup\Student_Grade_Manager_練習\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\Student_Grade_Test.csproj.AssemblyReference.cache
+C:\Users\Jimmy-HY_Liu\source\repos\Backup\Student_Grade_Manager_練習\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\Student_Grade_Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jimmy-HY_Liu\source\repos\Backup\Student_Grade_Manager_練習\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\Student_Grade_Test.AssemblyInfoInputs.cache
+C:\Users\Jimmy-HY_Liu\source\repos\Backup\Student_Grade_Manager_練習\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\Student_Grade_Test.AssemblyInfo.cs
+C:\Users\Jimmy-HY_Liu\source\repos\Backup\Student_Grade_Manager_練習\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\Student_Grade_Test.csproj.CoreCompileInputs.cache
+C:\Users\Jimmy-HY_Liu\source\repos\Backup\Student_Grade_Manager_練習\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\Student_Grade_Test.sourcelink.json
+C:\Users\Jimmy-HY_Liu\source\repos\Backup\Student_Grade_Manager_練習\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\Student_Grade_Test.dll
+C:\Users\Jimmy-HY_Liu\source\repos\Backup\Student_Grade_Manager_練習\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\refint\Student_Grade_Test.dll
+C:\Users\Jimmy-HY_Liu\source\repos\Backup\Student_Grade_Manager_練習\StudentGradManager_0924_8.0\Student_Grade_Test\obj\Debug\net8.0\Student_Grade_Test.pdb

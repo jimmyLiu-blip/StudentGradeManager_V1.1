@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentGradeManager.Repository
+namespace StudentGradeManager.Repository // interface的方法預設就是public
 {
     public interface IFileRepository
     {
-        void SaveDataToJson(List<Student> students);
-        List<Student> LoadDataFromJson();
+        public void SaveDataToJson(List<Student> students);
+        public List<Student> LoadDataFromJson();
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WXiHKJbmXlg=",
+  "dgSpecHash": "PCs2Fot14BE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\Student_Grade_Manager_練習\\StudentGradManager_0924_8.0\\Student_Grade_Test\\Student_Grade_Test.csproj",
+  "projectFilePath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Student_Grade_Test\\Student_Grade_Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jimmy-HY_Liu\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\Jimmy-HY_Liu\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

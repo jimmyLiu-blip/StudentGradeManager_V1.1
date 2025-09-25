@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F4224A3-8FE4-4AA8-B71E-1064BB81604D}|Service\\Service.csproj|c:\\users\\a0978\\source\\repos\\studentgrademanager_v1.1\\service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F4224A3-8FE4-4AA8-B71E-1064BB81604D}|Service\\Service.csproj|solutionrelative:service\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CB84EE3-33D9-439F-9B22-B290DCEE1DB8}|Repository\\Repository.csproj|c:\\users\\a0978\\source\\repos\\studentgrademanager_v1.1\\repository\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CB84EE3-33D9-439F-9B22-B290DCEE1DB8}|Repository\\Repository.csproj|solutionrelative:repository\\filerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B2A54B-4C37-44A2-828D-13C4CFBCFF71}|Domain\\Domain.csproj|c:\\users\\a0978\\source\\repos\\studentgrademanager_v1.1\\domain\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B2A54B-4C37-44A2-828D-13C4CFBCFF71}|Domain\\Domain.csproj|solutionrelative:domain\\grade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A079D24E-1918-4518-9550-E083748B3B0A}|StudentGradManager_0924\\StudentGradManager_0924.csproj|c:\\users\\a0978\\source\\repos\\studentgrademanager_v1.1\\studentgradmanager_0924\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A079D24E-1918-4518-9550-E083748B3B0A}|StudentGradManager_0924\\StudentGradManager_0924.csproj|solutionrelative:studentgradmanager_0924\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CB84EE3-33D9-439F-9B22-B290DCEE1DB8}|Repository\\Repository.csproj|c:\\users\\a0978\\source\\repos\\studentgrademanager_v1.1\\repository\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CB84EE3-33D9-439F-9B22-B290DCEE1DB8}|Repository\\Repository.csproj|solutionrelative:repository\\ifilerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B2A54B-4C37-44A2-828D-13C4CFBCFF71}|Domain\\Domain.csproj|c:\\users\\a0978\\source\\repos\\studentgrademanager_v1.1\\domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B2A54B-4C37-44A2-828D-13C4CFBCFF71}|Domain\\Domain.csproj|solutionrelative:domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\StudentGradManager_0924\\Program.cs",
+              "RelativeDocumentMoniker": "StudentGradManager_0924\\Program.cs",
+              "ToolTip": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\StudentGradManager_0924\\Program.cs",
+              "RelativeToolTip": "StudentGradManager_0924\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:07:42.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Service\\StudentService.cs",
+              "RelativeDocumentMoniker": "Service\\StudentService.cs",
+              "ToolTip": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Service\\StudentService.cs",
+              "RelativeToolTip": "Service\\StudentService.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAYwMgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:07:41.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "fileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Repository\\fileRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\fileRepository.cs",
+              "ToolTip": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Repository\\fileRepository.cs",
+              "RelativeToolTip": "Repository\\fileRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwC8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:07:39.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IFileRepository.cs",
+              "DocumentMoniker": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Repository\\IFileRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IFileRepository.cs",
+              "ToolTip": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Repository\\IFileRepository.cs",
+              "RelativeToolTip": "Repository\\IFileRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:07:39.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Domain\\Student.cs",
+              "RelativeDocumentMoniker": "Domain\\Student.cs",
+              "ToolTip": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Domain\\Student.cs",
+              "RelativeToolTip": "Domain\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:07:38.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Grade.cs",
+              "DocumentMoniker": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Domain\\Grade.cs",
+              "RelativeDocumentMoniker": "Domain\\Grade.cs",
+              "ToolTip": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Domain\\Grade.cs",
+              "RelativeToolTip": "Domain\\Grade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:07:37.264Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

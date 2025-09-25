@@ -6041,26 +6041,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jimmy-HY_Liu\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages": {},
+    "C:\\Users\\a0978\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Student_Grade_Test\\Student_Grade_Test.csproj",
+      "projectUniqueName": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Student_Grade_Test\\Student_Grade_Test.csproj",
       "projectName": "Student_Grade_Test",
-      "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Student_Grade_Test\\Student_Grade_Test.csproj",
-      "packagesPath": "C:\\Users\\Jimmy-HY_Liu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Student_Grade_Test\\obj\\",
+      "projectPath": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Student_Grade_Test\\Student_Grade_Test.csproj",
+      "packagesPath": "C:\\Users\\a0978\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Student_Grade_Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 25.1\\Components\\Offline Packages",
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jimmy-HY_Liu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 25.1.config",
+        "C:\\Users\\a0978\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6069,21 +6066,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 25.1\\Components\\System\\Components\\Packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Domain\\Domain.csproj"
+            "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Repository\\Repository.csproj"
+            "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Repository\\Repository.csproj"
             },
-            "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\Jimmy-HY_Liu\\source\\repos\\StudentGradManager_0925_8.0_自行更新\\Service\\Service.csproj"
+            "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\a0978\\source\\repos\\StudentGradeManager_V1.1\\Service\\Service.csproj"
             }
           }
         }

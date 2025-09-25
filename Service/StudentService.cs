@@ -1,6 +1,7 @@
 ﻿using StudentGradeManager.Domain;
 using StudentGradeManager.Repository;
 using System.Threading.Channels;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace StudentGradeManager.Service
 {
@@ -31,7 +32,7 @@ namespace StudentGradeManager.Service
         public void UpdateStudent(string numberId, string newName, string newClassName)
         {
             // 忘記先宣告一個變數student
-            var student = _students.FirstOrDefault(s => s.NumberId == numberId);
+            var student = GetStudnetNameByNumberId(numberId);
             if (student == null)
             {
                 throw new InvalidOperationException("學號不存在，無法更新學生資訊");
@@ -54,7 +55,7 @@ namespace StudentGradeManager.Service
 
         public void AddStudentGrade(string numberId, string subject, double score)
         {
-            var student = _students.FirstOrDefault(s => s.NumberId == numberId);
+            var student = GetStudnetNameByNumberId(numberId);
             if (student == null)
             {
                 throw new InvalidOperationException("學號不存在，無法新增該學生的科目成績");
@@ -67,7 +68,7 @@ namespace StudentGradeManager.Service
 
         public void UpdateStudentGrade(string numberId, string oldSubject, string newSubject, double newScore)
         {
-            var student = _students.FirstOrDefault(s => s.NumberId == numberId);
+            var student = GetStudnetNameByNumberId(numberId);
             if (student == null)
             {
                 throw new InvalidOperationException("此學生的學號不存在，無法更新他的科目和成績");
@@ -91,13 +92,14 @@ namespace StudentGradeManager.Service
         {
             // 忘記如何先判斷學生是否存在學生列表的程式表達
             // 忘記如何用空條件運算子，空聯合運算子??
-            var student = _students.FirstOrDefault(s => s.NumberId == numberId);
+            var student = GetStudnetNameByNumberId(numberId);
+
             return student?.Grades ?? new List<Grade>();
         }
 
         public (double average, double highest, double lowest) GetStudentStatistics(string numberId)
         {
-            var student = _students.FirstOrDefault(s => s.NumberId == numberId);
+            var student = GetStudnetNameByNumberId(numberId);
             if (student == null || !student.Grades.Any())
             {
                 return (0, 0, 0);
@@ -122,6 +124,7 @@ namespace StudentGradeManager.Service
 
         public List<string> GetAllSubjects()
         {
+            /*
             var subjects = new List<string>();
 
             foreach (var student in _students)
@@ -137,10 +140,20 @@ namespace StudentGradeManager.Service
 
             subjects.Sort();
             return subjects;
+            */
+
+            // 可以使用Linq重寫
+            return _students
+                .SelectMany(s => s.Grades)       // 先尋找學生的所有成績
+                .Select(g => g.Subject)          // 選取科目名稱
+                .Distinct()                      // 去除重複
+                .OrderBy(subject => subject)     // 排序
+                .ToList();                       // 是一個立即執行的操作符
         }
 
         public (double highest, double lowest, double studentCount) GetSubjectStatistics(string subject)
         {
+            /*
             var scores = new List<double>();
 
             foreach (var student in _students)
@@ -172,22 +185,38 @@ namespace StudentGradeManager.Service
             // scores.Count()：這是一個 LINQ 語法，會回傳 scores 列表中的項目數量。
             // scores.Count：這是 List<T> 類別的屬性，也會回傳 scores 列表中的項目數量。
             return (highest, lowest, scores.Count);
+            */
+
+            var scores = _students
+                .SelectMany(s => s.Grades)
+                .Where(s => s.Subject == subject)
+                .Select(g => g.Score)
+                .ToList();
+
+            if (scores.Count == 0)
+            {
+                return (0, 0, 0);
+            }
+
+            return(scores.Max(), scores.Min(), scores.Count());
         }
 
         public string GetStudentName(string numberId)
 
         {
-
-            var student = _students.FirstOrDefault(s => s.NumberId == numberId);
+            var student = GetStudnetNameByNumberId(numberId);
 
             if (student == null)
             {
-                Console.WriteLine("學生姓名不存在");
-                return "學生姓名不存在";
+                throw new InvalidOperationException($"找不到學號：{numberId}的學生");
             }
 
             return student.Name;
+        }
 
+        public Student? GetStudnetNameByNumberId(string numberId)
+        { 
+            return _students.FirstOrDefault(s => s.NumberId == numberId);
         }
     }
 }

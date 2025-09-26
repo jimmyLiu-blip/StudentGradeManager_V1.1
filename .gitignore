@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+*.suo
+/.vs/StudentGradManager/v17/.futdcache.v2
+/.vs/StudentGradManager/v17/DocumentLayout.backup.json
+*.json
+/.vs

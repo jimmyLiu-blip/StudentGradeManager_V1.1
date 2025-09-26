@@ -25,8 +25,7 @@ namespace StudentGradeManager.Repository
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"發生存檔異常，{ex.Message}");
-                return;
+                throw new InvalidOperationException($"發生存檔異常", ex);
             }
         }
 
@@ -47,6 +46,7 @@ namespace StudentGradeManager.Repository
             {
                 Console.WriteLine($"發生讀檔異常，{ex.Message}");
                 return new List<Student>();
+                throw new InvalidOperationException("讀檔失敗，無法順利開啟", ex);
             }
         }
     }
